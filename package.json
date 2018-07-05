@@ -4,7 +4,7 @@
   "description": "A project focusing on React and related tools",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "httpster -d ./dist -p 3000"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/rpirritano/react-essentials/issues"
   },
-  "homepage": "https://github.com/rpirritano/react-essentials#readme"
+  "homepage": "https://github.com/rpirritano/react-essentials#readme",
+  "devDependencies": {
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0"
+  },
+  "dependencies": {
+    "babel-preset-stage-0": "^6.24.1"
+  }
 }

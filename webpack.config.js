@@ -29,6 +29,14 @@ module.exports = {
 					test: /\.json$/, //where to search - all files with.json
 					exclude: /(node_modules)/, //dont look in these files
 					loader: "json-loader"
+				},
+				{
+					test: /\.css$/,
+					loader: 'style-loader!css-loader!autoprefixer-loader'
+				},
+				{
+					test: /\.scss$/,
+					loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
 				}
 		]
 	}

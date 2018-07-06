@@ -24,7 +24,12 @@ module.exports = {
 				query: {
 					presets: ["latest", "stage-0", "react"]
 				}
-			}
+			},
+				{
+					test: /\.json$/, //where to search - all files with.json
+					exclude: /(node_modules)/, //dont look in these files
+					loader: "json-loader"
+				}
 		]
 	}
 }

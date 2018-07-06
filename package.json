@@ -4,7 +4,7 @@
   "description": "A project focusing on React and related tools",
   "main": "index.js",
   "scripts": {
-    "start": "httpster -d ./dist -p 3000"
+    "start": "./node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,15 @@
   },
   "homepage": "https://github.com/rpirritano/react-essentials#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^6.2.5",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-latest": "^6.16.0",
-    "babel-preset-react": "^6.16.0"
+    "babel-preset-react": "^6.16.0",
+    "install": "^0.12.1",
+    "npm": "^6.1.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "babel-preset-stage-0": "^6.24.1"
